@@ -1,0 +1,9 @@
+1. How do I redirect to another webpage?
+	window.location = url; and window.location.href = url; How are they different? 
+	// similar behavior as an HTTP redirect
+	window.location.replace("http://stackoverflow.com");
+
+	// similar behavior as clicking on a link
+	window.location.href = "http://stackoverflow.com";	
+
+	window.location.replace(...) is better than using window.location.href, because replace() does not keep the originating page in the session history, meaning the user won't get stuck in a never-ending back-button fiasco.
