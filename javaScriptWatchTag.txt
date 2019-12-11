@@ -1,4 +1,4 @@
-1. How do I redirect to another webpage?
+1. How do we redirect to another webpage?
 	window.location = url; and window.location.href = url; How are they different? 
 	// similar behavior as an HTTP redirect
 	window.location.replace("http://stackoverflow.com");
